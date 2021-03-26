@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Locale;
 
 public class HolaMundo {
@@ -16,9 +17,13 @@ public class HolaMundo {
             System.out.println("numeric = " + numeric);
             int numeric2 = 10;
         }
-        // variables dinamicas var
+        // variables dinámicas var
         var numero3 = 15;
 
+        //sout - System.out.println()
+        //soutv - System.out.println("ultimaVariableQueEncuentra = " + ultimaVariableQueEncuentra)
+        System.out.println("numero3 = " + numero3);
 
+        int edadPersona = 5;
     }
 }
