@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"pe.popehiflo.clase1","c":"PrimerClase","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"pe.popehiflo.clase1","c":"PrimerClase","l":"PrimerClase()","url":"%3Cinit%3E()"},{"p":"pe.popehiflo.clase1","c":"PrimerClase","l":"sumar(int, int)","url":"sumar(int,int)"}]
