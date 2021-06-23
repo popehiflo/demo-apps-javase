@@ -2,7 +2,7 @@
  * 
  */
 package pe.popehiflo.modulo5;
-
+// paquete PIC
 /**
  * @author popehiflo
  * Clase para explicar las sentencias de control if, if else
