@@ -30,6 +30,22 @@ public class Principal {
 		System.out.println("SLOGAN: " + restauranteMargarita.getSlogan());
 		String estado = restauranteMargarita.isEstatus() ? "HABILITADO":"DESHABILITADO";
 		System.out.println("ESTATUS: " + estado);
+		
+		Restaurante restauranteJuanita = new Restaurante();
+		restauranteJuanita.setId(2000L);
+		restauranteJuanita.setNombre("Restaurante Juanita");
+		restauranteJuanita.setImagen("restJuanita.png");
+		restauranteJuanita.setSlogan("Extras y menu a la carta");
+		restauranteJuanita.setEstatus(false);
+		System.out.println("ID: " + restauranteJuanita.getId());
+		System.out.println("NOMBRE: " + restauranteJuanita.getNombre());
+		System.out.println("IMAGEN: " + restauranteJuanita.getImagen());
+		System.out.println("SLOGAN: " + restauranteJuanita.getSlogan());
+		String estate = restauranteJuanita.isEstatus() ? "HABILITADO":"DESHABILITADO";
+		System.out.println("ESTATUS: " + estate);
+		
+		System.out.println(restauranteMargarita);
+		System.out.println(restauranteJuanita);
 	}
 
 }
