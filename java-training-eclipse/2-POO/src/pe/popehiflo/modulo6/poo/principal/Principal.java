@@ -4,6 +4,7 @@
 package pe.popehiflo.modulo6.poo.principal;
 
 import pe.popehiflo.modulo6.poo.entity.Restaurante;
+import pe.popehiflo.modulo6.poo.entity.Sucursal;
 
 /**
  * @author popehiflo
@@ -67,6 +68,14 @@ public class Principal {
 		System.out.println("ESTATUS: " + estadoMickela);
 		System.out.println("TIPO MONEDA: " + restauranteMickela.getTipoMoneda());
 		System.out.println("PAIS: " + restauranteMickela.getPais());
+		
+		Sucursal sucursalMickelaEEUU = new Sucursal();
+		sucursalMickelaEEUU.setId(1000L);
+		sucursalMickelaEEUU.setNombre("Restaurante Mickela - Los Angeles");
+		sucursalMickelaEEUU.setGerente("Ariadna Hijuela");
+		
+		restauranteMickela.setSucursal(sucursalMickelaEEUU);
+		System.out.println("-SUCURSALES-: " + restauranteMickela.getSucursal().getNombre());
 		
 		System.out.println(restauranteMargarita);
 		System.out.println(restauranteJuanita);
