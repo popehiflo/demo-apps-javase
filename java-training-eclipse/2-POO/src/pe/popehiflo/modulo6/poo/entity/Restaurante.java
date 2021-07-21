@@ -42,13 +42,30 @@ public class Restaurante {
 	private Sucursal sucursal;
 	
 	/**
-	 * Constructor default
+	 * Constructor default, con tipo de moneda por defecto (PEN)
 	 */
 	public Restaurante() {
 		System.out.println("Creando objeto desde constructor default");
 		this.tipoMoneda = "Sol (PEN)";
 	}
-	
+	/**
+	 * Sobrecarga de Constructor
+	 * @param tipoMoneda parametro con el tipo de moneda asignado por el usuario
+	 */
+	public Restaurante(String tipoMoneda) {
+		System.out.println("Creando objeto desde constructor sobrecargado con moneda");
+		this.tipoMoneda = tipoMoneda;
+	}
+	/**
+	 * Sobrecarga de Constructor
+	 * @param tipoMoneda parametro con el tipo de moneda asignado por el usuario
+	 * @param pais parametro con el pais asigando por el usuario
+	 */
+	public Restaurante(String tipoMoneda, String pais) {
+		System.out.println("Creando objeto desde constructor sobrecargado con moneda y pais");
+		this.tipoMoneda = tipoMoneda;
+		this.pais = pais;
+	}
 	
 	/**
 	 * @return the id
