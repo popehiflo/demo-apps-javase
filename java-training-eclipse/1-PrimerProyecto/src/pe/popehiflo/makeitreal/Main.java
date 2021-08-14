@@ -53,7 +53,7 @@ public class Main {
 		System.out.println("ASTERISCOS");
 		System.out.println(test.asteriscos("H*o*l*a"));
 		System.out.println(test.asteriscos("Hola"));
-		int[] prueba = {3,12,45,7};
+		int[] prueba = {3,12,45,7,0,500};
 		System.out.println(test.duplicar(prueba));
 		countingDuplicates("");
 		
