@@ -21,6 +21,10 @@ public class Restaurante extends Edificio {
 	 * Sucursal del restaurante
 	 */
 	private Sucursal sucursal;
+	/**
+	 * Alimento del restaurante
+	 */
+	private Alimento alimento;
 	
 	/**
 	 * Constructor default, con tipo de moneda por defecto (PEN)
@@ -83,6 +87,18 @@ public class Restaurante extends Edificio {
 	 */
 	public void setSucursal(Sucursal sucursal) {
 		this.sucursal = sucursal;
+	}
+	/**
+	 * @return the alimento
+	 */
+	public Alimento getAlimento() {
+		return alimento;
+	}
+	/**
+	 * @param alimento the alimento to set
+	 */
+	public void setAlimento(Alimento alimento) {
+		this.alimento = alimento;
 	}
 	
 	

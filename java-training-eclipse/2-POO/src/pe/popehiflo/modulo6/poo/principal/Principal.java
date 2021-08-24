@@ -3,8 +3,13 @@
  */
 package pe.popehiflo.modulo6.poo.principal;
 
+import java.util.Scanner;
+
+import pe.popehiflo.modulo6.poo.entity.Alimento;
+import pe.popehiflo.modulo6.poo.entity.Cliente;
 import pe.popehiflo.modulo6.poo.entity.Restaurante;
 import pe.popehiflo.modulo6.poo.entity.Sucursal;
+import pe.popehiflo.modulo6.poo.services.impl.RestauranteServiceImpl;
 
 /**
  * @author popehiflo
@@ -24,7 +29,7 @@ public class Principal {
 		restauranteMargarita.setImagen("restMargarita.png");
 		restauranteMargarita.setSlogan("Platos Criollos y mas");
 		restauranteMargarita.setEstatus(true);
-		restauranteMargarita.setPais("Perú");
+		restauranteMargarita.setPais("Perï¿½");
 		System.out.println("ID: " + restauranteMargarita.getId());
 		System.out.println("NOMBRE: " + restauranteMargarita.getNombre());
 		System.out.println("IMAGEN: " + restauranteMargarita.getImagen());
@@ -41,7 +46,7 @@ public class Principal {
 		restauranteJuanita.setImagen("restJuanita.png");
 		restauranteJuanita.setSlogan("Extras y menu a la carta");
 		restauranteJuanita.setEstatus(true);
-		restauranteJuanita.setPais("Perú");
+		restauranteJuanita.setPais("Perï¿½");
 		System.out.println("ID: " + restauranteJuanita.getId());
 		System.out.println("NOMBRE: " + restauranteJuanita.getNombre());
 		System.out.println("IMAGEN: " + restauranteJuanita.getImagen());
@@ -76,6 +81,27 @@ public class Principal {
 		
 		restauranteMickela.setSucursal(sucursalMickelaEEUU);
 		System.out.println("-SUCURSALES-: " + restauranteMickela.getSucursal().getNombre());
+		
+		//:::::::::::::::::::::: FUNCIONALIDAD DE VENTA DE ALIMENTO ::::::::::::::::::::::
+		Alimento alimentoItaliano = new Alimento();
+		alimentoItaliano.setId(1010L);
+		alimentoItaliano.setNombre("Pizza de Pepperoni");
+		alimentoItaliano.setPrecioUnitario(200);
+		
+		restauranteMickela.setAlimento(alimentoItaliano);
+		
+		Scanner leerValorTeclado = new Scanner(System.in);
+		System.out.println("El total a pagar de " + restauranteMickela.getAlimento().getNombre() + " es: $" + restauranteMickela.getAlimento().getPrecioUnitario());
+		double cantidadPagadaCliente = leerValorTeclado.nextDouble();
+		Cliente cliente = new Cliente();
+		cliente.setId(100L);
+		cliente.setNombre("Michael Jordan");
+		cliente.setPagoPrecio(cantidadPagadaCliente);
+		System.out.println("La cantidad pagada por el cliente es: " + cliente.getPagoPrecio());
+		
+		//Aniadiendo la invocacion al metodo vender
+		RestauranteServiceImpl restauranteServiceImpl = new RestauranteServiceImpl();
+		restauranteServiceImpl.vender(restauranteMickela.getAlimento(), cliente);
 		
 		System.out.println(restauranteMargarita);
 		System.out.println(restauranteJuanita);

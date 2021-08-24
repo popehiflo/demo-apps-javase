@@ -4,6 +4,7 @@
 package pe.popehiflo.modulo6.poo.services;
 
 import pe.popehiflo.modulo6.poo.entity.Alimento;
+import pe.popehiflo.modulo6.poo.entity.Cliente;
 
 /**
  * @author popehiflo
@@ -15,5 +16,5 @@ public interface RestauranteService {
 	// Los metodos de una interface pueden ser public y abstract
 	//public abstract void vender();
 	
-	public abstract void vender(Alimento alimento);
+	public abstract void vender(Alimento alimento, Cliente cliente);
 }

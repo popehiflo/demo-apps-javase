@@ -24,7 +24,7 @@ public class Alimento {
 	/**
 	 * Precio unitario del alimento
 	 */
-	private String precioUnitario;
+	private double precioUnitario;
 	
 	/**
 	 * @return the id
@@ -65,13 +65,13 @@ public class Alimento {
 	/**
 	 * @return the precioUnitario
 	 */
-	public String getPrecioUnitario() {
+	public double getPrecioUnitario() {
 		return precioUnitario;
 	}
 	/**
 	 * @param precioUnitario the precioUnitario to set
 	 */
-	public void setPrecioUnitario(String precioUnitario) {
+	public void setPrecioUnitario(double precioUnitario) {
 		this.precioUnitario = precioUnitario;
 	}
 }
