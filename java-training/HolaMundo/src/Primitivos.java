@@ -1,3 +1,5 @@
+import java.time.ZoneId;
+
 public class Primitivos {
 
     public static void main(String[] args) {
@@ -36,5 +38,7 @@ public class Primitivos {
         System.out.println("*** - *** - ***");
 
         var numeroVar = 9223372036854775L;
+
+        ZoneId london = ZoneId.of("Europe/London");
     }
 }
