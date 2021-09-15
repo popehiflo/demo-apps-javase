@@ -22,5 +22,9 @@ public class HolaMundo {
         
         miVariableCadena = "Adios!";
         System.out.println(miVariableCadena);
+        
+        //var - Inferencia de tipos en Java
+        var miVar = 10;
+        System.out.println("miVAr = " + miVar);
     }
 }
