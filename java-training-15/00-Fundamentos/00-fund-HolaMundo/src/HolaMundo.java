@@ -17,7 +17,7 @@ public class HolaMundo {
         miVariable = 5;
         System.out.println(miVariable);
         
-        String miVariableCadena = "Saludos";
+        String miVariableCadena = "Saludos, probando token Git";
         System.out.println(miVariableCadena);
         
         miVariableCadena = "Adios!";
