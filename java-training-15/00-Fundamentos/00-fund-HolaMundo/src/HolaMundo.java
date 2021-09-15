@@ -44,5 +44,13 @@ public class HolaMundo {
         System.out.println(i + j + usuario);
         System.out.println(usuario + i + j);
         System.out.println(usuario + (i + j));
+        
+        //Caracteres especiales
+        var nombre = "Mickela";
+        System.out.println("Nueva linea: \n"+ nombre);
+        System.out.println("Tabulador: \t"+ nombre);
+        System.out.println("Retroceso: \b"+ nombre);
+        System.out.println("Comilla simple: \'"+ nombre+"\'");
+        System.out.println("Comilla doble: \""+ nombre+"\"");
     }
 }
