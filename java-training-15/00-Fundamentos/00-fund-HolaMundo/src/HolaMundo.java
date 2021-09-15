@@ -9,5 +9,18 @@
 public class HolaMundo {
     public static void main(String args[]) {
         System.out.println("Hola mundo desde JDK 15!");
+        
+        //Definimos la variable
+        int miVariable = 10;
+        System.out.println(miVariable);
+        
+        miVariable = 5;
+        System.out.println(miVariable);
+        
+        String miVariableCadena = "Saludos";
+        System.out.println(miVariableCadena);
+        
+        miVariableCadena = "Adios!";
+        System.out.println(miVariableCadena);
     }
 }
