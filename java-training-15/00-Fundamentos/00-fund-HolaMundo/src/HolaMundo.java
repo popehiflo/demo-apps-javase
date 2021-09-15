@@ -26,5 +26,10 @@ public class HolaMundo {
         //var - Inferencia de tipos en Java
         var miVar = 10;
         System.out.println("miVAr = " + miVar);
+        
+        //Valores permitidos en el nombre de variables
+        var permitido = 1;
+        var _permitido = 2;
+        var $permitido = 3;
     }
 }
