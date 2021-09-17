@@ -57,5 +57,26 @@ public class TiposDatos {
         System.out.println("varDouble = " + varDouble);
         var varFloat = 10.0F;
         System.out.println("varFloat = " + varFloat);
+        
+        // Tipos primitivos tipo char
+        char charCaracter = 'a';
+        System.out.println("charCaracter = " + charCaracter);
+        char varChar = '\u0021';
+        System.out.println("varChar \\u0021 = " + varChar);
+        char varCharDecimal = 33;
+        System.out.println("varCharDecimal 33 = " + varCharDecimal);
+        char varCharSimbolo = '!';
+        System.out.println("varCharSimbolo ! = " + varCharSimbolo);
+        
+        var varChar1 = '\u0021';
+        System.out.println("varChar1 \\u0021 = " + varChar1);
+        var varCharDecimal1 = 33;
+        System.out.println("varCharDecimal1 33 = " + varCharDecimal1);
+        var varCharSimbolo1 = '!';
+        System.out.println("varCharSimbolo1 ! = " + varCharSimbolo1);
+        int variableEnteraSimbolo = '!';
+        System.out.println("variableEnteraSimbolo = " +variableEnteraSimbolo);
+        int letra = 'A';
+        System.out.println("letra = " + letra);
     }
 }
