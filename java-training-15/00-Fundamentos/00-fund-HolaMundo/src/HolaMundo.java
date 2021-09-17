@@ -61,5 +61,13 @@ public class HolaMundo {
         Scanner consola = new Scanner(System.in);
         var user = consola.nextLine();
         System.out.println("user = " + user);
+        
+        //Practica Scanner
+        Scanner info = new Scanner(System.in);
+        System.out.println("Proporciona el titulo del libro: ");
+        var tituloLibro = info.nextLine();
+        System.out.println("Proporciona el autor del libro: ");
+        var autorLibro = info.nextLine();
+        System.out.println(tituloLibro + " fue escrito por " + autorLibro);
     }
 }
