@@ -50,5 +50,12 @@ public class TiposDatos {
         double otroDouble = (double)1.7976931348623158E308;
         System.out.println("forzado a double(3.4028236E38D): " + otroDouble);
         
+        // Inferencia de tipos con Var y tipos primitivos
+        var varEntero = 10;
+        System.out.println("varEntero = " + varEntero);
+        var varDouble = 10.0;
+        System.out.println("varDouble = " + varDouble);
+        var varFloat = 10.0F;
+        System.out.println("varFloat = " + varFloat);
     }
 }
