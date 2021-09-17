@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * Mi clase en Java
  */
@@ -52,5 +55,11 @@ public class HolaMundo {
         System.out.println("Retroceso: \b"+ nombre);
         System.out.println("Comilla simple: \'"+ nombre+"\'");
         System.out.println("Comilla doble: \""+ nombre+"\"");
+        
+        //Clase Scanner
+        System.err.println("Escribe tu nombre: ");
+        Scanner consola = new Scanner(System.in);
+        var user = consola.nextLine();
+        System.out.println("user = " + user);
     }
 }
